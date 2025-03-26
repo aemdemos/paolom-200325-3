@@ -1,12 +1,57 @@
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: #280067;
 }
 
 footer .footer > div {
   margin: auto;
   max-width: 1200px;
   padding: 40px 24px 24px;
+  display: grid;
+  grid-template-areas: 
+  "links links"
+  "logo legal"
+  "notice notice";
+  color: #fff;
+}
+
+footer .footer > div a:any-link {
+  color: #fff;
+}
+
+footer .footer > div > .links {
+  grid-area: links;
+  font-size: 16px;
+}
+
+footer .footer > div > .logo {
+  grid-area: logo;
+}
+
+footer .footer > div > .legal {
+  grid-area: legal;
+  font-size: 14px;
+}
+
+footer .footer > div > .notice {
+  grid-area: notice;
+  font-size: 12px;
+}
+
+footer .footer > div > .links > div > ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer > div > .links > div > ul > li > ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer > div > .logo img {
+  height: 40px;
+  width: auto;
 }
 
 footer .footer p {
