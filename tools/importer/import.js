@@ -11,25 +11,7 @@
  */
 /* global window, WebImporter, XPathResult */
 /* eslint-disable no-console */
-import columns__three_columns_1Parser from './parsers/columns__three_columns_1.js';
-import cards2Parser from './parsers/cards2.js';
-import columns__three_columns_3Parser from './parsers/columns__three_columns_3.js';
-import embed__video_4Parser from './parsers/embed__video_4.js';
-import columns5Parser from './parsers/columns5.js';
-import hero6Parser from './parsers/hero6.js';
-import accordion7Parser from './parsers/accordion7.js';
-import columns__three_columns_8Parser from './parsers/columns__three_columns_8.js';
-import columns__three_columns_9Parser from './parsers/columns__three_columns_9.js';
-import columns10Parser from './parsers/columns10.js';
-import tabs11Parser from './parsers/tabs11.js';
-import columns12Parser from './parsers/columns12.js';
-import hero13Parser from './parsers/hero13.js';
-import hero14Parser from './parsers/hero14.js';
-import cards15Parser from './parsers/cards15.js';
-import columns__three_columns_16Parser from './parsers/columns__three_columns_16.js';
-import columns17Parser from './parsers/columns17.js';
-import columns18Parser from './parsers/columns18.js';
-import hero19Parser from './parsers/hero19.js';
+;
 
 import headerParser from './parsers/header.js';
 
@@ -65,25 +47,7 @@ WebImporter.Import = {
 };
 
 const parsers = {
-      'Columns (three columns) 1': columns__three_columns_1Parser,
-    'Cards 2': cards2Parser,
-    'Columns (three columns) 3': columns__three_columns_3Parser,
-    'Embed (video) 4': embed__video_4Parser,
-    'Columns 5': columns5Parser,
-    'Hero 6': hero6Parser,
-    'Accordion 7': accordion7Parser,
-    'Columns (three columns) 8': columns__three_columns_8Parser,
-    'Columns (three columns) 9': columns__three_columns_9Parser,
-    'Columns 10': columns10Parser,
-    'Tabs 11': tabs11Parser,
-    'Columns 12': columns12Parser,
-    'Hero 13': hero13Parser,
-    'Hero 14': hero14Parser,
-    'Cards 15': cards15Parser,
-    'Columns (three columns) 16': columns__three_columns_16Parser,
-    'Columns 17': columns17Parser,
-    'Columns 18': columns18Parser,
-    'Hero 19': hero19Parser,
+  ,
 };
 
 /**
