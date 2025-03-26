@@ -1,87 +1,63 @@
 
 .cards-wrapper > .cards.block {
   display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap properly */
-  gap: 16px; /* Consistent spacing between cards */
-  justify-content: space-between; /* Distribute cards evenly */
+  flex-wrap: wrap; /* Allow cards to wrap */
+  gap: 32px; /* Add consistent spacing between cards */
+  justify-content: space-between; /* Distribute cards evenly across rows */
 }
 
 .cards-wrapper > .cards.block > ul {
-  display: flex;
-  flex-wrap: wrap; /* Ensure cards wrap correctly */
+  display: flex; /* Use flexbox for consistent layout */
+  flex-wrap: wrap; /* Allow wrapping of cards */
   padding: 0;
   margin: 0;
-  list-style: none; /* Remove default list styles */
-  gap: 16px; /* Ensure uniform spacing */
+  list-style: none; /* Remove list styling */
+  width: 100%; /* Ensure the container spans the full width */
 }
 
 .cards-wrapper > .cards.block > ul > li {
-  display: flex;
-  flex-direction: column; /* Stack image and text vertically inside cards */
-  flex: 1 1 calc(33.333% - 16px); /* Three cards per row */
-  max-width: calc(33.333% - 16px); /* Ensure cards fit evenly */
-  background-color: var(--background-color); /* Set card background */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
-  border: none; /* Remove borders */
-  overflow: hidden; /* Prevent overflow issues */
+  display: flex; /* Use flexbox for image and text alignment */
+  flex-direction: row; /* Ensure image and text are side by side */
+  align-items: center; /* Vertically align image and text */
+  flex: 1 1 calc(50% - 16px); /* Two cards per row with proper spacing */
+  max-width: calc(50% - 16px); /* Ensure cards take up half the width */
 }
 
-.cards-wrapper > .cards.block > ul > li img {
-  width: 100%; /* Ensure images span the full width of the card */
-  aspect-ratio: 4 / 5; /* Adjust aspect ratio for taller images */
-  object-fit: cover; /* Ensure images fill their container */
+.cards-wrapper > .cards.block > ul > li:nth-child(3) {
+  flex: 1 1 100%; /* Full width for the third card */
+  max-width: 100%; /* Ensure it spans the full width of the container */
 }
 
 .cards-wrapper > .cards.block .cards-card-image {
-  display: flex; /* Ensure proper alignment */
-  justify-content: center; /* Center the image within its container */
-  line-height: 0; /* Remove spacing around the image */
-  margin-bottom: 12px; /* Add consistent spacing below the image */
+  flex: 0 0 50%; /* Ensure the image takes up half the card width */
+  height: auto; /* Maintain natural height */
 }
 
 .cards-wrapper > .cards.block .cards-card-body {
+  flex: 1; /* Ensure the text takes up the remaining space */
+  padding: 16px; /* Add spacing around text */
   display: flex;
-  flex-direction: column; /* Stack text elements vertically */
-  padding: 16px; /* Add padding for better spacing */
-  gap: 12px; /* Space between text elements */
-}
-
-.cards-wrapper > .cards.block .cards-card-body p:first-child {
-  font-size: 1rem; /* Adjust font size for the title */
-  font-weight: 500; /* Reduce font weight for a subtler hierarchy */
-  margin: 0; /* Remove default margins */
-}
-
-.cards-wrapper > .cards.block .cards-card-body p {
-  margin: 0; /* Ensure consistent spacing for paragraphs */
-  color: var(--text-color); /* Match text color with theme */
+  flex-direction: column; /* Stack text and button vertically */
+  justify-content: space-between; /* Space out text and button */
+  gap: 12px; /* Add spacing between text elements */
 }
 
 .cards-wrapper > .cards.block .button-container {
-  display: flex; /* Align the link horizontally */
-  align-items: center; /* Vertically center the link */
-  margin-top: auto; /* Push the link to the bottom of the card */
+  display: flex; /* Use flexbox for button alignment */
+  justify-content: flex-start; /* Left-align the button */
 }
 
-.cards-wrapper > .cards.block .button-container .button {
-  background: none; /* Remove background from link */
-  border: none; /* Remove border */
-  color: var(--link-color); /* Set link color */
-  font-size: 1rem; /* Adjust font size */
-  font-weight: bold; /* Make link text bold */
-  text-decoration: none; /* Remove underline */
-  display: inline-flex; /* Align text and arrow inline */
-  align-items: center; /* Center-align text and arrow */
-}
-
-.cards-wrapper > .cards.block .button-container .button::after {
-  content: "→"; /* Add arrow to the link */
-  margin-left: 4px; /* Space between text and arrow */
+.cards-wrapper > .cards.block > ul > li:nth-child(3) .cards-card-body {
+  padding-top: 20px; /* Add spacing between the image and text */
 }
 
 @media (max-width: 768px) {
   .cards-wrapper > .cards.block > ul > li {
-    flex: 1 1 100%; /* Stack cards vertically */
-    max-width: 100%; /* Ensure cards span full width */
+    flex: 1 1 100%; /* Stack all cards vertically on smaller screens */
+    max-width: 100%; /* Ensure cards span the full width */
+  }
+
+  .cards-wrapper > .cards.block > ul > li .cards-card-body {
+    flex-direction: column; /* Ensure text and button stack vertically */
   }
 }
