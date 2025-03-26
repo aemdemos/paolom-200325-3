@@ -583,15 +583,15 @@
       "cluster": 6,
       "instances": [
         {
-          "url": "https://unifyrare.com/en/ahus/living-with-ahus",
-          "urlHash": "13a2d855853594fbc84b524cf4da2da18189e1e1",
-          "uuid": "13a2d855-17-e81bee22adabb3033848b43f8a33b7ec25d2c7bf",
-          "xpath": "/html[1]/body[1]/section[1]/awt-hero[1]"
-        },
-        {
           "url": "https://unifyrare.com/en",
           "urlHash": "2fdd27bff441edad4e969f477500cc4f57d8477b",
           "uuid": "2fdd27bf-17-e81bee22adabb3033848b43f8a33b7ec25d2c7bf",
+          "xpath": "/html[1]/body[1]/section[1]/awt-hero[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/living-with-ahus",
+          "urlHash": "13a2d855853594fbc84b524cf4da2da18189e1e1",
+          "uuid": "13a2d855-17-e81bee22adabb3033848b43f8a33b7ec25d2c7bf",
           "xpath": "/html[1]/body[1]/section[1]/awt-hero[1]"
         },
         {
