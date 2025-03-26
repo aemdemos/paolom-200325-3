@@ -4,13 +4,14 @@ footer {
 
 footer .footer > div {
   margin: auto;
-  max-width: 1200px;
+  max-width: 1280px;
   padding: 40px 24px 24px;
   display: grid;
   grid-template-areas: 
   "links links"
   "logo legal"
   "notice notice";
+  grid-template-columns: 650px 525px;
   color: #fff;
 }
 
@@ -21,6 +22,7 @@ footer .footer > div a:any-link {
 footer .footer > div > .links {
   grid-area: links;
   font-size: 16px;
+  margin-bottom: 80px;
 }
 
 footer .footer > div > .logo {
@@ -30,11 +32,15 @@ footer .footer > div > .logo {
 footer .footer > div > .legal {
   grid-area: legal;
   font-size: 14px;
+  text-align: right;
 }
 
 footer .footer > div > .notice {
   grid-area: notice;
   font-size: 12px;
+  margin-top: 50px;
+  max-width: 1200px;
+  text-align: center;
 }
 
 footer .footer > div > .links > div > ul {
@@ -42,16 +48,24 @@ footer .footer > div > .links > div > ul {
   justify-content: space-between;
   list-style: none;
   padding: 0;
+  font-weight: 600;
 }
 
 footer .footer > div > .links > div > ul > li > ul {
   list-style: none;
   padding: 0;
+  border-top: 3px solid #F6376B;
+  padding-top: 20px;
+  font-weight: 300;
 }
 
 footer .footer > div > .logo img {
   height: 40px;
   width: auto;
+}
+
+footer .footer > div > .legal a:any-link {
+  color: #F6376B;
 }
 
 footer .footer p {
