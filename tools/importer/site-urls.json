@@ -2,39 +2,39 @@
   "originUrl": "https://unifyrare.com",
   "urls": [
     {
-      "url": "http://unifyrare.com/en",
+      "url": "https://unifyrare.com/en",
       "source": "CRAWL"
     },
     {
-      "url": "http://unifyrare.com/en/ahus/about-ahus",
+      "url": "https://unifyrare.com/en/ahus/about-ahus",
       "source": "CRAWL"
     },
     {
-      "url": "http://unifyrare.com/en/ahus/diagnosing-ahus",
+      "url": "https://unifyrare.com/en/ahus/diagnosing-ahus",
       "source": "CRAWL"
     },
     {
-      "url": "http://unifyrare.com/en/ahus/living-with-ahus",
+      "url": "https://unifyrare.com/en/ahus/living-with-ahus",
       "source": "CRAWL"
     },
     {
-      "url": "http://unifyrare.com/en/gmg-exercise-videos",
+      "url": "https://unifyrare.com/en/gmg-exercise-videos",
       "source": "CRAWL"
     },
     {
-      "url": "http://unifyrare.com/en/gmg/diagnosing-gmg",
+      "url": "https://unifyrare.com/en/gmg/diagnosing-gmg",
       "source": "CRAWL"
     },
     {
-      "url": "http://unifyrare.com/en/gmg/living-gmg",
+      "url": "https://unifyrare.com/en/gmg/living-gmg",
       "source": "CRAWL"
     },
     {
-      "url": "http://unifyrare.com/en/gmg/managing-gmg",
+      "url": "https://unifyrare.com/en/gmg/managing-gmg",
       "source": "CRAWL"
     },
     {
-      "url": "http://unifyrare.com/en/gmg/understanding-gmg",
+      "url": "https://unifyrare.com/en/gmg/understanding-gmg",
       "source": "CRAWL"
     }
   ],
