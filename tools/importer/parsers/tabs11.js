@@ -1,56 +1,55 @@
 export default function parse(element, {document}) {
-  // Helper function to extract text content and structure
-  const extractContent = (container) => {
-    const sections = [];
-    container.querySelectorAll('[slot="tab"]').forEach((tabItem) => {
-      const tabTitle = tabItem.querySelector('button').textContent.trim();
+  const createTable = WebImporter.DOMUtils.createTable;
 
-      const tabContentId = tabItem.getAttribute('contentid');
-      const contentSlot = container.querySelector(`#${tabContentId}`);
+  // Extract tab menus and their content
+  const tabMenu = element.querySelector('awt-tab-menu');
 
-      if (contentSlot) {
-        const paragraphs = [];
-        contentSlot.querySelectorAll('awt-article').forEach((article) => {
-          const standfirst = article.getAttribute('standfirst').trim();
-          const sectionContent = document.createElement('div');
+  if (!tabMenu) {
+    throw new Error('Tab menu not found in the element');
+  }
 
-          const header = document.createElement('h3');
-          header.textContent = standfirst;
-          sectionContent.appendChild(header);
+  const tabs = tabMenu.querySelectorAll('awt-tab-item');
+  const contents = tabMenu.querySelectorAll('[slot="content"]');
 
-          article.querySelectorAll('div[slot="paragraph"]').forEach((paragraph) => {
-            const paragraphContent = document.createElement('div');
-            paragraphContent.innerHTML = paragraph.innerHTML;
-            sectionContent.appendChild(paragraphContent);
-          });
+  if (tabs.length !== contents.length) {
+    throw new Error('Mismatch in the number of tabs and corresponding content sections');
+  }
 
-          paragraphs.push(sectionContent);
-        });
+  // Prepare cells array for the table
+  const cells = [];
 
-        sections.push([tabTitle, paragraphs]);
-      }
-    });
-
-    return sections;
-  };
-
-  // Extract content dynamically from the element
-  const content = extractContent(element);
-
-  // Create the table header dynamically
+  // Add table header
   const headerCell = document.createElement('strong');
   headerCell.textContent = 'Tabs';
   const headerRow = [headerCell];
+  cells.push(headerRow);
 
-  // Create the table cells dynamically
-  const cells = [headerRow];
-  content.forEach(([title, paragraphs]) => {
-    cells.push([title, paragraphs]);
+  // Iterate through tabs and collect their labels and contents
+  tabs.forEach((tab, index) => {
+    const tabLabelElement = tab.querySelector('button');
+    const tabLabel = tabLabelElement ? tabLabelElement.textContent.trim() : 'Untitled Tab';
+
+    const contentElement = contents[index];
+    const cleanedContent = contentElement.cloneNode(true);
+
+    // Remove "slot" attributes and inline styles
+    cleanedContent.querySelectorAll('[slot]').forEach(el => el.removeAttribute('slot'));
+    cleanedContent.querySelectorAll('[style]').forEach(el => el.removeAttribute('style'));
+
+    // Ensure content is not null or empty
+    const contentHTML = cleanedContent.innerHTML.trim();
+    const finalContent = contentHTML ? cleanedContent : document.createTextNode('No content available');
+
+    // Push tab label and cleaned content into a new row
+    cells.push([
+      tabLabel,
+      finalContent
+    ]);
   });
 
-  // Create the block table using DOMUtils
-  const block = WebImporter.DOMUtils.createTable(cells, document);
+  // Create table with extracted data
+  const blockTable = createTable(cells, document);
 
-  // Replace the original element with the new block table
-  element.replaceWith(block);
+  // Replace original element with the new block table
+  element.replaceWith(blockTable);
 }

@@ -1,58 +1,53 @@
 export default function parse(element, {document}) {
-  // Helper function to extract text content, preserving line breaks
-  const extractContentWithLineBreaks = (htmlElement) => {
-    const tempDiv = document.createElement('div');
-    tempDiv.innerHTML = htmlElement.innerHTML;
-    return tempDiv.textContent.trim();
-  };
+    const createTable = WebImporter.DOMUtils.createTable;
 
-  // Extract tab items and their respective content from the awt-tab-menu element
-  const tabItems = Array.from(element.querySelectorAll('awt-tab-item button')); // Tab headers
-  const tabContents = Array.from(element.querySelectorAll('[slot="content"]')); // Tab content sections
+    // Extract the tabs and corresponding content sections
+    const tabItems = Array.from(element.querySelectorAll('awt-tab-item button.awt-tab__btn'));
+    const contentSections = Array.from(element.querySelectorAll('[slot="content"]'));
 
-  const tableRows = [];
+    // Header row: Defines the block type (Columns)
+    const headerCell = document.createElement('strong');
+    headerCell.textContent = "Columns";
+    const headerRow = [headerCell];
 
-  // First row (header row)
-  const headerCell = document.createElement('strong');
-  headerCell.textContent = "Columns";
-  tableRows.push([headerCell]);
+    // Process each column (tab + content)
+    const columns = tabItems.map((tabItem, index) => {
+        const title = tabItem?.textContent?.trim() || "";
+        const contentSection = contentSections[index];
 
-  // Second row (tab headers)
-  const headersRow = tabItems.map((tab) => {
-    const headerDiv = document.createElement('div');
-    const headerH2 = document.createElement('h2');
-    headerH2.textContent = tab.textContent;
-    headerDiv.appendChild(headerH2);
-    return headerDiv;
-  });
-  tableRows.push(headersRow);
+        // Extract image
+        const imageEl = contentSection?.querySelector('awt-image');
+        const imageSrc = imageEl?.getAttribute('src');
+        const image = document.createElement('img');
+        if (imageSrc) {
+            image.src = imageSrc;
+        }
 
-  // Third row (tab content)
-  const contentRow = tabContents.map((content) => {
-    const contentDiv = document.createElement('div');
+        // Extract description or paragraph text
+        const cardTitleEl = contentSection?.querySelector('awt-ilustration-card[cardtitle]');
+        const cardTitle = cardTitleEl?.getAttribute('cardtitle') || "";
 
-    // Extract relevant content: images and paragraphs
-    const images = Array.from(content.querySelectorAll('awt-image')).map((img) => {
-      const imageElement = document.createElement('img');
-      imageElement.src = img.getAttribute('src');
-      imageElement.alt = img.getAttribute('altimage') || '';
-      return imageElement;
+        const paragraphEl = contentSection?.querySelector('awt-article-section div[slot="paragraph"]');
+        const paragraph = paragraphEl?.textContent?.trim() || cardTitle;
+
+        // Construct elements for the column
+        const titleElement = document.createElement('h2');
+        titleElement.textContent = title; // Fixed the issue with empty <h2>
+
+        const paragraphElement = document.createElement('p');
+        paragraphElement.innerHTML = paragraph;
+
+        return [image, titleElement, paragraphElement];
     });
 
-    const paragraphs = Array.from(content.querySelectorAll('[slot="paragraph"]')).map((paragraph) => {
-      const paragraphElement = document.createElement('p');
-      paragraphElement.textContent = extractContentWithLineBreaks(paragraph);
-      return paragraphElement;
-    });
+    // Assemble the table
+    const rows = [
+        headerRow, // Block type row
+        columns
+    ];
 
-    contentDiv.append(...images, ...paragraphs);
-    return contentDiv;
-  });
-  tableRows.push(contentRow);
+    const blockTable = createTable(rows, document);
 
-  // Create the block table
-  const blockTable = WebImporter.DOMUtils.createTable(tableRows, document);
-
-  // Replace the original element with the block table
-  element.replaceWith(blockTable);
+    // Replace the original element with the structured block table
+    element.replaceWith(blockTable);
 }

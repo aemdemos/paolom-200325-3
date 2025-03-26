@@ -5,16 +5,52 @@
       "path": "/nav",
       "instances": [
         {
+          "url": "https://unifyrare.com/en/ahus/living-with-ahus",
+          "urlHash": "13a2d855853594fbc84b524cf4da2da18189e1e1",
+          "uuid": "13a2d855-00-db21687e7f04c03687a3ba82c9e967ac1e1a80d0",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/living-with-ahus",
+          "urlHash": "13a2d855853594fbc84b524cf4da2da18189e1e1",
+          "uuid": "13a2d855-01-2038783824d5385ce560e730cce5f0a3706bf525",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/living-with-ahus",
+          "urlHash": "13a2d855853594fbc84b524cf4da2da18189e1e1",
+          "uuid": "13a2d855-02-0deec271d5fbab5b754eeef80dea00985e4d8be2",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/living-with-ahus",
+          "urlHash": "13a2d855853594fbc84b524cf4da2da18189e1e1",
+          "uuid": "13a2d855-03-62608bd588e5b7bb5dfdbcc3568a4a961e2d3ecf",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[3]"
+        },
+        {
           "url": "https://unifyrare.com/en",
           "urlHash": "2fdd27bff441edad4e969f477500cc4f57d8477b",
           "uuid": "2fdd27bf-00-db21687e7f04c03687a3ba82c9e967ac1e1a80d0",
           "xpath": "/html[1]/body[1]/awtcustom-header[1]"
         },
         {
-          "url": "https://unifyrare.com/en/ahus/living-with-ahus",
-          "urlHash": "13a2d855853594fbc84b524cf4da2da18189e1e1",
-          "uuid": "13a2d855-00-db21687e7f04c03687a3ba82c9e967ac1e1a80d0",
-          "xpath": "/html[1]/body[1]/awtcustom-header[1]"
+          "url": "https://unifyrare.com/en",
+          "urlHash": "2fdd27bff441edad4e969f477500cc4f57d8477b",
+          "uuid": "2fdd27bf-01-2038783824d5385ce560e730cce5f0a3706bf525",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en",
+          "urlHash": "2fdd27bff441edad4e969f477500cc4f57d8477b",
+          "uuid": "2fdd27bf-02-0deec271d5fbab5b754eeef80dea00985e4d8be2",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en",
+          "urlHash": "2fdd27bff441edad4e969f477500cc4f57d8477b",
+          "uuid": "2fdd27bf-03-62608bd588e5b7bb5dfdbcc3568a4a961e2d3ecf",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[3]"
         },
         {
           "url": "https://unifyrare.com/en/ahus/about-ahus",
@@ -23,10 +59,46 @@
           "xpath": "/html[1]/body[1]/awtcustom-header[1]"
         },
         {
+          "url": "https://unifyrare.com/en/ahus/about-ahus",
+          "urlHash": "8e4973a7b8c2d12db05c2bc930848a807d0eb1f5",
+          "uuid": "8e4973a7-01-2038783824d5385ce560e730cce5f0a3706bf525",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/about-ahus",
+          "urlHash": "8e4973a7b8c2d12db05c2bc930848a807d0eb1f5",
+          "uuid": "8e4973a7-02-0deec271d5fbab5b754eeef80dea00985e4d8be2",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/about-ahus",
+          "urlHash": "8e4973a7b8c2d12db05c2bc930848a807d0eb1f5",
+          "uuid": "8e4973a7-03-62608bd588e5b7bb5dfdbcc3568a4a961e2d3ecf",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[3]"
+        },
+        {
           "url": "https://unifyrare.com/en/gmg/understanding-gmg",
           "urlHash": "b37c78b12b909b5146abdb88bd40914471a3e296",
           "uuid": "b37c78b1-00-db21687e7f04c03687a3ba82c9e967ac1e1a80d0",
           "xpath": "/html[1]/body[1]/awtcustom-header[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/understanding-gmg",
+          "urlHash": "b37c78b12b909b5146abdb88bd40914471a3e296",
+          "uuid": "b37c78b1-01-2038783824d5385ce560e730cce5f0a3706bf525",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/understanding-gmg",
+          "urlHash": "b37c78b12b909b5146abdb88bd40914471a3e296",
+          "uuid": "b37c78b1-02-0deec271d5fbab5b754eeef80dea00985e4d8be2",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/understanding-gmg",
+          "urlHash": "b37c78b12b909b5146abdb88bd40914471a3e296",
+          "uuid": "b37c78b1-03-62608bd588e5b7bb5dfdbcc3568a4a961e2d3ecf",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[3]"
         },
         {
           "url": "https://unifyrare.com/en/gmg/managing-gmg",
@@ -35,16 +107,94 @@
           "xpath": "/html[1]/body[1]/awtcustom-header[1]"
         },
         {
+          "url": "https://unifyrare.com/en/gmg/managing-gmg",
+          "urlHash": "bdf7a82cc187c9c19e3492a45990a03fdc6e087d",
+          "uuid": "bdf7a82c-01-2038783824d5385ce560e730cce5f0a3706bf525",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/managing-gmg",
+          "urlHash": "bdf7a82cc187c9c19e3492a45990a03fdc6e087d",
+          "uuid": "bdf7a82c-02-0deec271d5fbab5b754eeef80dea00985e4d8be2",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/managing-gmg",
+          "urlHash": "bdf7a82cc187c9c19e3492a45990a03fdc6e087d",
+          "uuid": "bdf7a82c-03-62608bd588e5b7bb5dfdbcc3568a4a961e2d3ecf",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[3]"
+        },
+        {
           "url": "https://unifyrare.com/en/gmg/living-gmg",
           "urlHash": "dcc9125a028bf6edc98a7c09a13a04ffd04a0469",
           "uuid": "dcc9125a-00-db21687e7f04c03687a3ba82c9e967ac1e1a80d0",
           "xpath": "/html[1]/body[1]/awtcustom-header[1]"
         },
         {
+          "url": "https://unifyrare.com/en/gmg/living-gmg",
+          "urlHash": "dcc9125a028bf6edc98a7c09a13a04ffd04a0469",
+          "uuid": "dcc9125a-01-2038783824d5385ce560e730cce5f0a3706bf525",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/living-gmg",
+          "urlHash": "dcc9125a028bf6edc98a7c09a13a04ffd04a0469",
+          "uuid": "dcc9125a-02-0deec271d5fbab5b754eeef80dea00985e4d8be2",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/living-gmg",
+          "urlHash": "dcc9125a028bf6edc98a7c09a13a04ffd04a0469",
+          "uuid": "dcc9125a-03-62608bd588e5b7bb5dfdbcc3568a4a961e2d3ecf",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[3]"
+        },
+        {
           "url": "https://unifyrare.com/en/gmg/diagnosing-gmg",
           "urlHash": "e6734d4cdb261b293e221a36655825553a095586",
           "uuid": "e6734d4c-00-db21687e7f04c03687a3ba82c9e967ac1e1a80d0",
           "xpath": "/html[1]/body[1]/awtcustom-header[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/diagnosing-gmg",
+          "urlHash": "e6734d4cdb261b293e221a36655825553a095586",
+          "uuid": "e6734d4c-01-2038783824d5385ce560e730cce5f0a3706bf525",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/diagnosing-gmg",
+          "urlHash": "e6734d4cdb261b293e221a36655825553a095586",
+          "uuid": "e6734d4c-02-0deec271d5fbab5b754eeef80dea00985e4d8be2",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/diagnosing-gmg",
+          "urlHash": "e6734d4cdb261b293e221a36655825553a095586",
+          "uuid": "e6734d4c-03-62608bd588e5b7bb5dfdbcc3568a4a961e2d3ecf",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[3]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/diagnosing-ahus",
+          "urlHash": "eb79d5a809710f86aad5d605484d48a1d9d57455",
+          "uuid": "eb79d5a8-00-db21687e7f04c03687a3ba82c9e967ac1e1a80d0",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/diagnosing-ahus",
+          "urlHash": "eb79d5a809710f86aad5d605484d48a1d9d57455",
+          "uuid": "eb79d5a8-01-2038783824d5385ce560e730cce5f0a3706bf525",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/diagnosing-ahus",
+          "urlHash": "eb79d5a809710f86aad5d605484d48a1d9d57455",
+          "uuid": "eb79d5a8-02-0deec271d5fbab5b754eeef80dea00985e4d8be2",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/diagnosing-ahus",
+          "urlHash": "eb79d5a809710f86aad5d605484d48a1d9d57455",
+          "uuid": "eb79d5a8-03-62608bd588e5b7bb5dfdbcc3568a4a961e2d3ecf",
+          "xpath": "/html[1]/body[1]/awtcustom-header[1]/div[1]/div[2]/awtcustom-header-nav[1]/awtcustom-header-megamenu[1]/awtcustom-header-megamenuitem[3]"
         }
       ]
     },
@@ -53,54 +203,276 @@
       "path": "/footer",
       "instances": [
         {
-          "url": "https://unifyrare.com/en",
-          "urlHash": "2fdd27bff441edad4e969f477500cc4f57d8477b",
-          "uuid": "2fdd27bf-24-bc18759ba06c3387ff74f998e2278c2abcf27510",
-          "xpath": "/html[1]/body[1]/footer[1]"
-        },
-        {
           "url": "https://unifyrare.com/en/ahus/living-with-ahus",
           "urlHash": "13a2d855853594fbc84b524cf4da2da18189e1e1",
           "uuid": "13a2d855-29-bc18759ba06c3387ff74f998e2278c2abcf27510",
           "xpath": "/html[1]/body[1]/footer[1]"
         },
         {
+          "url": "https://unifyrare.com/en/ahus/living-with-ahus",
+          "urlHash": "13a2d855853594fbc84b524cf4da2da18189e1e1",
+          "uuid": "13a2d855-28-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/living-with-ahus",
+          "urlHash": "13a2d855853594fbc84b524cf4da2da18189e1e1",
+          "uuid": "13a2d855-27-0a459baa9944b819c965bd5defd939b8a390d17d",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en",
+          "urlHash": "2fdd27bff441edad4e969f477500cc4f57d8477b",
+          "uuid": "2fdd27bf-24-bc18759ba06c3387ff74f998e2278c2abcf27510",
+          "xpath": "/html[1]/body[1]/awt-container[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en",
+          "urlHash": "2fdd27bff441edad4e969f477500cc4f57d8477b",
+          "uuid": "2fdd27bf-23-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en",
+          "urlHash": "2fdd27bff441edad4e969f477500cc4f57d8477b",
+          "uuid": "2fdd27bf-22-0a459baa9944b819c965bd5defd939b8a390d17d",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]"
+        },
+        {
           "url": "https://unifyrare.com/en/ahus/about-ahus",
           "urlHash": "8e4973a7b8c2d12db05c2bc930848a807d0eb1f5",
           "uuid": "8e4973a7-31-bc18759ba06c3387ff74f998e2278c2abcf27510",
-          "xpath": "/html[1]/body[1]/footer[1]"
+          "xpath": "/html[1]/body[1]/awt-container[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/about-ahus",
+          "urlHash": "8e4973a7b8c2d12db05c2bc930848a807d0eb1f5",
+          "uuid": "8e4973a7-30-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/about-ahus",
+          "urlHash": "8e4973a7b8c2d12db05c2bc930848a807d0eb1f5",
+          "uuid": "8e4973a7-29-0a459baa9944b819c965bd5defd939b8a390d17d",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]"
         },
         {
           "url": "https://unifyrare.com/en/gmg/understanding-gmg",
           "urlHash": "b37c78b12b909b5146abdb88bd40914471a3e296",
           "uuid": "b37c78b1-27-bc18759ba06c3387ff74f998e2278c2abcf27510",
-          "xpath": "/html[1]/body[1]/footer[1]"
+          "xpath": "/html[1]/body[1]/awt-container[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/understanding-gmg",
+          "urlHash": "b37c78b12b909b5146abdb88bd40914471a3e296",
+          "uuid": "b37c78b1-26-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/understanding-gmg",
+          "urlHash": "b37c78b12b909b5146abdb88bd40914471a3e296",
+          "uuid": "b37c78b1-25-0a459baa9944b819c965bd5defd939b8a390d17d",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]"
         },
         {
           "url": "https://unifyrare.com/en/gmg/managing-gmg",
           "urlHash": "bdf7a82cc187c9c19e3492a45990a03fdc6e087d",
           "uuid": "bdf7a82c-26-bc18759ba06c3387ff74f998e2278c2abcf27510",
-          "xpath": "/html[1]/body[1]/footer[1]"
+          "xpath": "/html[1]/body[1]/awt-container[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/managing-gmg",
+          "urlHash": "bdf7a82cc187c9c19e3492a45990a03fdc6e087d",
+          "uuid": "bdf7a82c-25-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/managing-gmg",
+          "urlHash": "bdf7a82cc187c9c19e3492a45990a03fdc6e087d",
+          "uuid": "bdf7a82c-24-0a459baa9944b819c965bd5defd939b8a390d17d",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]"
         },
         {
           "url": "https://unifyrare.com/en/gmg/living-gmg",
           "urlHash": "dcc9125a028bf6edc98a7c09a13a04ffd04a0469",
           "uuid": "dcc9125a-24-bc18759ba06c3387ff74f998e2278c2abcf27510",
-          "xpath": "/html[1]/body[1]/footer[1]"
+          "xpath": "/html[1]/body[1]/awt-container[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/living-gmg",
+          "urlHash": "dcc9125a028bf6edc98a7c09a13a04ffd04a0469",
+          "uuid": "dcc9125a-23-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/living-gmg",
+          "urlHash": "dcc9125a028bf6edc98a7c09a13a04ffd04a0469",
+          "uuid": "dcc9125a-22-0a459baa9944b819c965bd5defd939b8a390d17d",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]"
         },
         {
           "url": "https://unifyrare.com/en/gmg/diagnosing-gmg",
           "urlHash": "e6734d4cdb261b293e221a36655825553a095586",
           "uuid": "e6734d4c-26-bc18759ba06c3387ff74f998e2278c2abcf27510",
-          "xpath": "/html[1]/body[1]/footer[1]"
+          "xpath": "/html[1]/body[1]/awt-container[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/diagnosing-gmg",
+          "urlHash": "e6734d4cdb261b293e221a36655825553a095586",
+          "uuid": "e6734d4c-25-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/diagnosing-gmg",
+          "urlHash": "e6734d4cdb261b293e221a36655825553a095586",
+          "uuid": "e6734d4c-24-0a459baa9944b819c965bd5defd939b8a390d17d",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/diagnosing-ahus",
+          "urlHash": "eb79d5a809710f86aad5d605484d48a1d9d57455",
+          "uuid": "eb79d5a8-27-bc18759ba06c3387ff74f998e2278c2abcf27510",
+          "xpath": "/html[1]/body[1]/awt-container[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/diagnosing-ahus",
+          "urlHash": "eb79d5a809710f86aad5d605484d48a1d9d57455",
+          "uuid": "eb79d5a8-26-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/diagnosing-ahus",
+          "urlHash": "eb79d5a809710f86aad5d605484d48a1d9d57455",
+          "uuid": "eb79d5a8-25-0a459baa9944b819c965bd5defd939b8a390d17d",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]"
         }
       ]
     }
   ],
   "blocks": [
     {
-      "name": "unknown",
+      "name": "Table (striped & bordered)",
       "cluster": 1,
+      "instances": [
+        {
+          "url": "https://unifyrare.com/en/ahus/living-with-ahus",
+          "urlHash": "13a2d855853594fbc84b524cf4da2da18189e1e1",
+          "uuid": "13a2d855-28-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en",
+          "urlHash": "2fdd27bff441edad4e969f477500cc4f57d8477b",
+          "uuid": "2fdd27bf-23-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/about-ahus",
+          "urlHash": "8e4973a7b8c2d12db05c2bc930848a807d0eb1f5",
+          "uuid": "8e4973a7-30-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/understanding-gmg",
+          "urlHash": "b37c78b12b909b5146abdb88bd40914471a3e296",
+          "uuid": "b37c78b1-26-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/managing-gmg",
+          "urlHash": "bdf7a82cc187c9c19e3492a45990a03fdc6e087d",
+          "uuid": "bdf7a82c-25-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/living-gmg",
+          "urlHash": "dcc9125a028bf6edc98a7c09a13a04ffd04a0469",
+          "uuid": "dcc9125a-23-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/diagnosing-gmg",
+          "urlHash": "e6734d4cdb261b293e221a36655825553a095586",
+          "uuid": "e6734d4c-25-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/diagnosing-ahus",
+          "urlHash": "eb79d5a809710f86aad5d605484d48a1d9d57455",
+          "uuid": "eb79d5a8-26-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 2,
+      "instances": [
+        {
+          "url": "https://unifyrare.com/en/gmg/managing-gmg",
+          "urlHash": "bdf7a82cc187c9c19e3492a45990a03fdc6e087d",
+          "uuid": "bdf7a82c-18-5e1820ecc9d83f40aedb0dd2821f2cde46237226",
+          "xpath": "/html[1]/body[1]/section[1]/awt-container[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/diagnosing-gmg",
+          "urlHash": "e6734d4cdb261b293e221a36655825553a095586",
+          "uuid": "e6734d4c-18-5e1820ecc9d83f40aedb0dd2821f2cde46237226",
+          "xpath": "/html[1]/body[1]/section[1]/awt-container[1]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/diagnosing-ahus",
+          "urlHash": "eb79d5a809710f86aad5d605484d48a1d9d57455",
+          "uuid": "eb79d5a8-19-5e1820ecc9d83f40aedb0dd2821f2cde46237226",
+          "xpath": "/html[1]/body[1]/section[1]/awt-container[1]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 3,
+      "instances": [
+        {
+          "url": "https://unifyrare.com/en/ahus/about-ahus",
+          "urlHash": "8e4973a7b8c2d12db05c2bc930848a807d0eb1f5",
+          "uuid": "8e4973a7-22-448ef954f96db85f1ca12f9f8a8dd709f186d6ab",
+          "xpath": "/html[1]/body[1]/section[1]/awt-container[4]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/about-ahus",
+          "urlHash": "8e4973a7b8c2d12db05c2bc930848a807d0eb1f5",
+          "uuid": "8e4973a7-26-ec84b1387a57d595cf55154e5c5742707be1aa1e",
+          "xpath": "/html[1]/body[1]/section[1]/awt-container[8]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/understanding-gmg",
+          "urlHash": "b37c78b12b909b5146abdb88bd40914471a3e296",
+          "uuid": "b37c78b1-20-67f6c7d512f20b18754e702616101c35f1ec41ae",
+          "xpath": "/html[1]/body[1]/section[1]/awt-container[1]/awt-container[2]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/managing-gmg",
+          "urlHash": "bdf7a82cc187c9c19e3492a45990a03fdc6e087d",
+          "uuid": "bdf7a82c-22-19f2cde425009f3e8ee211c9383d08db01683765",
+          "xpath": "/html[1]/body[1]/section[1]/awt-container[3]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/diagnosing-gmg",
+          "urlHash": "e6734d4cdb261b293e221a36655825553a095586",
+          "uuid": "e6734d4c-22-19f2cde425009f3e8ee211c9383d08db01683765",
+          "xpath": "/html[1]/body[1]/section[1]/awt-container[3]"
+        },
+        {
+          "url": "https://unifyrare.com/en/ahus/diagnosing-ahus",
+          "urlHash": "eb79d5a809710f86aad5d605484d48a1d9d57455",
+          "uuid": "eb79d5a8-22-448ef954f96db85f1ca12f9f8a8dd709f186d6ab",
+          "xpath": "/html[1]/body[1]/section[1]/awt-container[4]"
+        }
+      ]
+    },
+    {
+      "name": "Embed (video)",
+      "cluster": 4,
       "instances": [
         {
           "url": "https://unifyrare.com/en/ahus/living-with-ahus",
@@ -154,120 +526,6 @@
     },
     {
       "name": "unknown",
-      "cluster": 2,
-      "instances": [
-        {
-          "url": "https://unifyrare.com/en/ahus/living-with-ahus",
-          "urlHash": "13a2d855853594fbc84b524cf4da2da18189e1e1",
-          "uuid": "13a2d855-28-8564758fa9430e613320764974c67e22751fe37f",
-          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
-        },
-        {
-          "url": "https://unifyrare.com/en",
-          "urlHash": "2fdd27bff441edad4e969f477500cc4f57d8477b",
-          "uuid": "2fdd27bf-23-8564758fa9430e613320764974c67e22751fe37f",
-          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
-        },
-        {
-          "url": "https://unifyrare.com/en/ahus/about-ahus",
-          "urlHash": "8e4973a7b8c2d12db05c2bc930848a807d0eb1f5",
-          "uuid": "8e4973a7-30-8564758fa9430e613320764974c67e22751fe37f",
-          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
-        },
-        {
-          "url": "https://unifyrare.com/en/gmg/understanding-gmg",
-          "urlHash": "b37c78b12b909b5146abdb88bd40914471a3e296",
-          "uuid": "b37c78b1-26-8564758fa9430e613320764974c67e22751fe37f",
-          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
-        },
-        {
-          "url": "https://unifyrare.com/en/gmg/managing-gmg",
-          "urlHash": "bdf7a82cc187c9c19e3492a45990a03fdc6e087d",
-          "uuid": "bdf7a82c-25-8564758fa9430e613320764974c67e22751fe37f",
-          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
-        },
-        {
-          "url": "https://unifyrare.com/en/gmg/diagnosing-gmg",
-          "urlHash": "e6734d4cdb261b293e221a36655825553a095586",
-          "uuid": "e6734d4c-25-8564758fa9430e613320764974c67e22751fe37f",
-          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
-        },
-        {
-          "url": "https://unifyrare.com/en/ahus/diagnosing-ahus",
-          "urlHash": "eb79d5a809710f86aad5d605484d48a1d9d57455",
-          "uuid": "eb79d5a8-26-8564758fa9430e613320764974c67e22751fe37f",
-          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
-        }
-      ]
-    },
-    {
-      "name": "unknown",
-      "cluster": 3,
-      "instances": [
-        {
-          "url": "https://unifyrare.com/en/ahus/about-ahus",
-          "urlHash": "8e4973a7b8c2d12db05c2bc930848a807d0eb1f5",
-          "uuid": "8e4973a7-22-448ef954f96db85f1ca12f9f8a8dd709f186d6ab",
-          "xpath": "/html[1]/body[1]/section[1]/awt-container[4]"
-        },
-        {
-          "url": "https://unifyrare.com/en/ahus/about-ahus",
-          "urlHash": "8e4973a7b8c2d12db05c2bc930848a807d0eb1f5",
-          "uuid": "8e4973a7-26-ec84b1387a57d595cf55154e5c5742707be1aa1e",
-          "xpath": "/html[1]/body[1]/section[1]/awt-container[8]"
-        },
-        {
-          "url": "https://unifyrare.com/en/gmg/understanding-gmg",
-          "urlHash": "b37c78b12b909b5146abdb88bd40914471a3e296",
-          "uuid": "b37c78b1-20-67f6c7d512f20b18754e702616101c35f1ec41ae",
-          "xpath": "/html[1]/body[1]/section[1]/awt-container[1]/awt-container[2]"
-        },
-        {
-          "url": "https://unifyrare.com/en/gmg/managing-gmg",
-          "urlHash": "bdf7a82cc187c9c19e3492a45990a03fdc6e087d",
-          "uuid": "bdf7a82c-22-19f2cde425009f3e8ee211c9383d08db01683765",
-          "xpath": "/html[1]/body[1]/section[1]/awt-container[3]"
-        },
-        {
-          "url": "https://unifyrare.com/en/gmg/diagnosing-gmg",
-          "urlHash": "e6734d4cdb261b293e221a36655825553a095586",
-          "uuid": "e6734d4c-22-19f2cde425009f3e8ee211c9383d08db01683765",
-          "xpath": "/html[1]/body[1]/section[1]/awt-container[3]"
-        },
-        {
-          "url": "https://unifyrare.com/en/ahus/diagnosing-ahus",
-          "urlHash": "eb79d5a809710f86aad5d605484d48a1d9d57455",
-          "uuid": "eb79d5a8-22-448ef954f96db85f1ca12f9f8a8dd709f186d6ab",
-          "xpath": "/html[1]/body[1]/section[1]/awt-container[4]"
-        }
-      ]
-    },
-    {
-      "name": "unknown",
-      "cluster": 4,
-      "instances": [
-        {
-          "url": "https://unifyrare.com/en/ahus/living-with-ahus",
-          "urlHash": "13a2d855853594fbc84b524cf4da2da18189e1e1",
-          "uuid": "13a2d855-19-9224f0d69fc45a4410d81d0138fc72dfa01a1d92",
-          "xpath": "/html[1]/body[1]/section[1]/awt-container[2]"
-        },
-        {
-          "url": "https://unifyrare.com/en/ahus/about-ahus",
-          "urlHash": "8e4973a7b8c2d12db05c2bc930848a807d0eb1f5",
-          "uuid": "8e4973a7-25-cc79ee40fd00bc8ba8adfed7b2a6c7c553aaf9c4",
-          "xpath": "/html[1]/body[1]/section[1]/awt-container[7]"
-        },
-        {
-          "url": "https://unifyrare.com/en/gmg/living-gmg",
-          "urlHash": "dcc9125a028bf6edc98a7c09a13a04ffd04a0469",
-          "uuid": "dcc9125a-20-44c38b8b7e4293637f8bd06c30798de9dbe5ac73",
-          "xpath": "/html[1]/body[1]/section[1]/awt-container[2]/awt-container[1]"
-        }
-      ]
-    },
-    {
-      "name": "unknown",
       "cluster": 5,
       "instances": [
         {
@@ -301,6 +559,12 @@
           "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]"
         },
         {
+          "url": "https://unifyrare.com/en/gmg/living-gmg",
+          "urlHash": "dcc9125a028bf6edc98a7c09a13a04ffd04a0469",
+          "uuid": "dcc9125a-22-0a459baa9944b819c965bd5defd939b8a390d17d",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]"
+        },
+        {
           "url": "https://unifyrare.com/en/gmg/diagnosing-gmg",
           "urlHash": "e6734d4cdb261b293e221a36655825553a095586",
           "uuid": "e6734d4c-24-0a459baa9944b819c965bd5defd939b8a390d17d",
@@ -315,7 +579,7 @@
       ]
     },
     {
-      "name": "unknown",
+      "name": "Hero",
       "cluster": 6,
       "instances": [
         {
@@ -369,7 +633,7 @@
       ]
     },
     {
-      "name": "unknown",
+      "name": "Hero",
       "cluster": 7,
       "instances": [
         {
@@ -399,25 +663,31 @@
       ]
     },
     {
-      "name": "unknown",
+      "name": "Columns (three columns)",
       "cluster": 8,
       "instances": [
         {
-          "url": "https://unifyrare.com/en/gmg/managing-gmg",
-          "urlHash": "bdf7a82cc187c9c19e3492a45990a03fdc6e087d",
-          "uuid": "bdf7a82c-18-5e1820ecc9d83f40aedb0dd2821f2cde46237226",
-          "xpath": "/html[1]/body[1]/section[1]/awt-container[1]"
+          "url": "https://unifyrare.com/en/ahus/living-with-ahus",
+          "urlHash": "13a2d855853594fbc84b524cf4da2da18189e1e1",
+          "uuid": "13a2d855-19-9224f0d69fc45a4410d81d0138fc72dfa01a1d92",
+          "xpath": "/html[1]/body[1]/section[1]/awt-container[2]"
         },
         {
-          "url": "https://unifyrare.com/en/ahus/diagnosing-ahus",
-          "urlHash": "eb79d5a809710f86aad5d605484d48a1d9d57455",
-          "uuid": "eb79d5a8-19-5e1820ecc9d83f40aedb0dd2821f2cde46237226",
-          "xpath": "/html[1]/body[1]/section[1]/awt-container[1]"
+          "url": "https://unifyrare.com/en/ahus/about-ahus",
+          "urlHash": "8e4973a7b8c2d12db05c2bc930848a807d0eb1f5",
+          "uuid": "8e4973a7-25-cc79ee40fd00bc8ba8adfed7b2a6c7c553aaf9c4",
+          "xpath": "/html[1]/body[1]/section[1]/awt-container[7]"
+        },
+        {
+          "url": "https://unifyrare.com/en/gmg/living-gmg",
+          "urlHash": "dcc9125a028bf6edc98a7c09a13a04ffd04a0469",
+          "uuid": "dcc9125a-20-44c38b8b7e4293637f8bd06c30798de9dbe5ac73",
+          "xpath": "/html[1]/body[1]/section[1]/awt-container[2]/awt-container[1]"
         }
       ]
     },
     {
-      "name": "unknown",
+      "name": "Columns (three columns)",
       "cluster": 9,
       "instances": [
         {
@@ -429,19 +699,19 @@
       ]
     },
     {
-      "name": "unknown",
+      "name": "Columns",
       "cluster": 10,
       "instances": [
         {
-          "url": "https://unifyrare.com/en/gmg/diagnosing-gmg",
-          "urlHash": "e6734d4cdb261b293e221a36655825553a095586",
-          "uuid": "e6734d4c-18-5e1820ecc9d83f40aedb0dd2821f2cde46237226",
-          "xpath": "/html[1]/body[1]/section[1]/awt-container[1]"
+          "url": "https://unifyrare.com/en/gmg/understanding-gmg",
+          "urlHash": "b37c78b12b909b5146abdb88bd40914471a3e296",
+          "uuid": "b37c78b1-18-72fde69001f015862f77a7f97aa51850227e552f",
+          "xpath": "/html[1]/body[1]/section[1]/awt-container[1]/awt-container[1]"
         }
       ]
     },
     {
-      "name": "unknown",
+      "name": "Tabs",
       "cluster": 11,
       "instances": [
         {
@@ -453,7 +723,7 @@
       ]
     },
     {
-      "name": "unknown",
+      "name": "Columns",
       "cluster": 12,
       "instances": [
         {
@@ -465,7 +735,7 @@
       ]
     },
     {
-      "name": "unknown",
+      "name": "Columns (three columns)",
       "cluster": 13,
       "instances": [
         {
@@ -477,7 +747,7 @@
       ]
     },
     {
-      "name": "unknown",
+      "name": "Columns",
       "cluster": 14,
       "instances": [
         {
@@ -489,7 +759,7 @@
       ]
     },
     {
-      "name": "unknown",
+      "name": "Tabs",
       "cluster": 15,
       "instances": [
         {
@@ -501,7 +771,7 @@
       ]
     },
     {
-      "name": "unknown",
+      "name": "Cards",
       "cluster": 16,
       "instances": [
         {
@@ -513,7 +783,7 @@
       ]
     },
     {
-      "name": "unknown",
+      "name": "Columns",
       "cluster": 17,
       "instances": [
         {
@@ -521,42 +791,6 @@
           "urlHash": "8e4973a7b8c2d12db05c2bc930848a807d0eb1f5",
           "uuid": "8e4973a7-19-5e1820ecc9d83f40aedb0dd2821f2cde46237226",
           "xpath": "/html[1]/body[1]/section[1]/awt-container[1]"
-        }
-      ]
-    },
-    {
-      "name": "unknown",
-      "cluster": 18,
-      "instances": [
-        {
-          "url": "https://unifyrare.com/en/gmg/living-gmg",
-          "urlHash": "dcc9125a028bf6edc98a7c09a13a04ffd04a0469",
-          "uuid": "dcc9125a-22-0a459baa9944b819c965bd5defd939b8a390d17d",
-          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]"
-        }
-      ]
-    },
-    {
-      "name": "unknown",
-      "cluster": 19,
-      "instances": [
-        {
-          "url": "https://unifyrare.com/en/gmg/living-gmg",
-          "urlHash": "dcc9125a028bf6edc98a7c09a13a04ffd04a0469",
-          "uuid": "dcc9125a-23-8564758fa9430e613320764974c67e22751fe37f",
-          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
-        }
-      ]
-    },
-    {
-      "name": "unknown",
-      "cluster": 20,
-      "instances": [
-        {
-          "url": "https://unifyrare.com/en/gmg/understanding-gmg",
-          "urlHash": "b37c78b12b909b5146abdb88bd40914471a3e296",
-          "uuid": "b37c78b1-18-72fde69001f015862f77a7f97aa51850227e552f",
-          "xpath": "/html[1]/body[1]/section[1]/awt-container[1]/awt-container[1]"
         }
       ]
     }

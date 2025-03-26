@@ -11,7 +11,22 @@
  */
 /* global window, WebImporter, XPathResult */
 /* eslint-disable no-console */
-;
+import table__striped___bordered_1Parser from './parsers/table__striped___bordered_1.js';
+import columns2Parser from './parsers/columns2.js';
+import columns3Parser from './parsers/columns3.js';
+import embed__video_4Parser from './parsers/embed__video_4.js';
+import hero6Parser from './parsers/hero6.js';
+import hero7Parser from './parsers/hero7.js';
+import columns__three_columns_8Parser from './parsers/columns__three_columns_8.js';
+import columns__three_columns_9Parser from './parsers/columns__three_columns_9.js';
+import columns10Parser from './parsers/columns10.js';
+import tabs11Parser from './parsers/tabs11.js';
+import columns12Parser from './parsers/columns12.js';
+import columns__three_columns_13Parser from './parsers/columns__three_columns_13.js';
+import columns14Parser from './parsers/columns14.js';
+import tabs15Parser from './parsers/tabs15.js';
+import cards16Parser from './parsers/cards16.js';
+import columns17Parser from './parsers/columns17.js';
 
 import headerParser from './parsers/header.js';
 
@@ -47,7 +62,22 @@ WebImporter.Import = {
 };
 
 const parsers = {
-  ,
+    'Table (striped & bordered) 1': table__striped___bordered_1Parser,
+    'Columns 2': columns2Parser,
+    'Columns 3': columns3Parser,
+    'Embed (video) 4': embed__video_4Parser,
+    'Hero 6': hero6Parser,
+    'Hero 7': hero7Parser,
+    'Columns (three columns) 8': columns__three_columns_8Parser,
+    'Columns (three columns) 9': columns__three_columns_9Parser,
+    'Columns 10': columns10Parser,
+    'Tabs 11': tabs11Parser,
+    'Columns 12': columns12Parser,
+    'Columns (three columns) 13': columns__three_columns_13Parser,
+    'Columns 14': columns14Parser,
+    'Tabs 15': tabs15Parser,
+    'Cards 16': cards16Parser,
+    'Columns 17': columns17Parser,
 };
 
 /**

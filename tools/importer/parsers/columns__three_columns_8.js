@@ -1,38 +1,43 @@
 export default function parse(element, {document}) {
-  // Helper function to parse and transform data from a single card
-  const parseCard = (card) => {
-    const image = card.querySelector('img');
-    const imageElement = document.createElement('img');
-    imageElement.src = image.getAttribute('src');
+    const columnsData = [];
 
-    const titleHtml = card.getAttribute('cardtitle');
-    const titleContainer = document.createElement('div');
-    titleContainer.innerHTML = titleHtml;
-    const title = document.createElement('h2');
-    title.innerHTML = titleContainer.textContent;
+    // Extract illustration cards from the given container
+    const illustrationCards = element.querySelectorAll('awt-ilustration-card');
 
-    const descriptionHtml = card.getAttribute('carddescription');
-    const descriptionContainer = document.createElement('div');
-    descriptionContainer.innerHTML = descriptionHtml;
-    const description = document.createElement('div');
-    description.append(...descriptionContainer.childNodes);
+    illustrationCards.forEach(card => {
+        // Extract image dynamically
+        const img = card.querySelector('img');
+        const imageElement = document.createElement('img');
+        imageElement.src = img?.src || ''; // Handle missing image
+        imageElement.alt = img?.alt || 'Image'; // Fallback for missing alt text
 
-    return [imageElement, title, description];
-  };
+        // Extract title dynamically
+        const titleText = card.getAttribute('cardtitle') || 'No Title'; // Handle missing title
+        const titleElement = document.createElement('h2');
+        titleElement.textContent = titleText;
 
-  // Extract all awt-ilustration-card elements
-  const cards = element.querySelectorAll('awt-ilustration-card');
+        // Extract description dynamically and safely
+        const descriptionText = card.getAttribute('carddescription') || 'No Description'; // Handle missing description
+        const descriptionElement = document.createElement('p');
+        descriptionElement.innerHTML = descriptionText; // Includes HTML like <sup>
 
-  // Parse each card and create row cells
-  const rows = Array.from(cards).map((card) => parseCard(card));
+        // Push column data ensuring all extracted content is accounted for
+        columnsData.push([imageElement, titleElement, descriptionElement]);
+    });
 
-  // Add the header row to the table
-  const headerCell = document.createElement('strong');
-  headerCell.textContent = 'Columns';
-  const headerRow = [headerCell];
-  rows.unshift(headerRow);
+    // Correct header row creation
+    const headerCell = document.createElement('strong');
+    headerCell.textContent = 'Columns';
+    const headerRow = [headerCell];
 
-  // Replace original element with the generated table
-  const table = WebImporter.DOMUtils.createTable(rows, document);
-  element.replaceWith(table);
+    // Combine header and data rows
+    const cells = [headerRow, ...columnsData];
+
+    // Create table using WebImporter.DOMUtils.createTable()
+    const blockTable = WebImporter.DOMUtils.createTable(cells, document);
+
+    // Replace the original element with the new block table
+    element.replaceWith(blockTable);
+
+    return blockTable;
 }

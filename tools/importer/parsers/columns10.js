@@ -1,60 +1,45 @@
 export default function parse(element, {document}) {
-  // Extract content from the original element
-  const title = element.querySelector('awt-article[standfirst]');
-  const paragraphs = element.querySelectorAll('awt-article-section div[slot="paragraph"] p');
-  const image = element.querySelector('awt-image');
-
-  // Initialize cells array for block table
-  const cells = [];
-
-  // Add Header row
+  // Create the block header row
   const headerCell = document.createElement('strong');
   headerCell.textContent = 'Columns';
   const headerRow = [headerCell];
-  cells.push(headerRow);
 
-  // Prepare content for the first column (text blocks)
-  const textColumn = [];
-  if (title && title.getAttribute('standfirst')) {
-    const titleElement = document.createElement('h2');
-    titleElement.textContent = title.getAttribute('standfirst').trim();
-    textColumn.push(titleElement);
-  }
+  // Extract the content from the input element
+  const containers = element.querySelectorAll('awt-container');
 
-  paragraphs.forEach(paragraph => {
-    const clonedParagraph = paragraph.cloneNode(true);
+  // Prepare the cells for the table
+  const contentRows = [];
 
-    // Process tooltips
-    clonedParagraph.querySelectorAll('.awt-tooltip').forEach(tooltip => {
-      const explanation = tooltip.querySelector('span:last-child');
-      const triggerText = tooltip.textContent.split(explanation ? explanation.textContent : '')[0].trim();
-      const spanElement = document.createElement('span');
+  containers.forEach((container) => {
+    const cells = [];
 
-      spanElement.textContent = `${triggerText} (${explanation ? explanation.textContent : ''})`; // Full context integration
-      tooltip.replaceWith(spanElement);
-    });
+    // Process text content
+    const article = container.querySelector('awt-article');
+    if (article) {
+      const standfirstDiv = document.createElement('div');
+      standfirstDiv.innerHTML = article.querySelector('div')?.innerHTML || '';
+      cells.push(standfirstDiv);
+    }
 
-    // Remove superscripts
-    clonedParagraph.querySelectorAll('sup').forEach(supElement => supElement.remove());
+    // Process image content
+    const image = container.querySelector('awt-image');
+    if (image) {
+      const imgElement = document.createElement('img');
+      imgElement.src = image.getAttribute('src');
+      cells.push(imgElement);
+    }
 
-    textColumn.push(clonedParagraph);
+    if (cells.length > 0) {
+      contentRows.push(cells);
+    }
   });
 
-  // Prepare content for the second column (image)
-  const imageColumn = [];
-  if (image && image.getAttribute('src')) {
-    const imgElement = document.createElement('img');
-    imgElement.setAttribute('src', image.getAttribute('src'));
-    imgElement.setAttribute('alt', image.getAttribute('altimage') || 'Image');
-    imageColumn.push(imgElement);
-  }
-
-  // Add content row to the table
-  cells.push([textColumn, imageColumn]);
+  // Create the rows for the table
+  const rows = [headerRow, ...contentRows];
 
   // Create the block table
-  const block = WebImporter.DOMUtils.createTable(cells, document);
+  const block = WebImporter.DOMUtils.createTable(rows, document);
 
-  // Replace the original element
+  // Replace the original element with the new block
   element.replaceWith(block);
 }
