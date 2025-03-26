@@ -62,7 +62,7 @@ WebImporter.Import = {
 };
 
 const parsers = {
-      'Table (striped & bordered) 1': table__striped___bordered_1Parser,
+    'Table (striped & bordered) 1': table__striped___bordered_1Parser,
     'Columns 2': columns2Parser,
     'Columns 3': columns3Parser,
     'Embed (video) 4': embed__video_4Parser,
