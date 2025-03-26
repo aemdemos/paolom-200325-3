@@ -1,0 +1,20 @@
+{
+  "originUrl": "https://unifyrare.com/en",
+  "urls": [],
+  "crawlOptions": {
+    "timeout": 64800000,
+    "inclusionPatterns": [],
+    "exclusionPatterns": [],
+    "limit": -1,
+    "sameDomain": true,
+    "keepHash": false,
+    "strategy": "SITEMAPS",
+    "logger": {}
+  },
+  "extractionErrors": [
+    {
+      "url": "https://unifyrare.com/en",
+      "status": "parseSitemapFromUrl (https://unifyrare.com/en): Failed to fetch or parse the sitemap. Failed to fetch the sitemap. Content-Type: text/html; charset=utf-8"
+    }
+  ]
+}
