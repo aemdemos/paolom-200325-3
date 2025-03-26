@@ -1,38 +1,66 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
-  padding: 0;
-  padding-top: 48px;
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: row; /* Ensures text and image are side by side */
+  justify-content: space-between; /* Distributes text and image */
+  align-items: center; /* Vertically centers the content */
+  background: linear-gradient(to right, #3a007b, #1d4f8b); /* Gradient background */
+  padding: 48px 24px; /* Balanced spacing for alignment */
+  max-width: unset; /* Allows the hero to span the full width of the page */
+  position: relative; /* Enables absolute positioning for child elements */
+  height: 480px; /* Adjusted height for better proportions */
 }
 
-.hero {
-  position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+.hero-wrapper > .hero {
+  display: flex;
+  flex-direction: row; /* Ensures text and image are side by side */
+  align-items: center; /* Vertically aligns content */
+  flex: 1; /* Ensures the hero content fills available space */
+  gap: 40px; /* Adds space between text and image */
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+.hero-wrapper .hero > div:first-child {
+  flex: 1; /* Ensures the text occupies one side */
+  order: 1; /* Positions the text on the left */
+  color: white; /* Makes the text readable on the gradient background */
+  text-align: left; /* Ensures proper text alignment */
 }
 
-.hero picture {
+.hero-wrapper .hero h1 {
+  font-size: 2.5rem; /* Adjusts the title size */
+  font-weight: bold;
+  margin: 0; /* Removes default margins */
+  max-width: 600px; /* Prevents the text from stretching too wide */
+  line-height: 1.2; /* Improves readability */
+  position: relative; /* Allows fine positioning */
+  padding-top: 20px; /* Moves the text higher */
+}
+
+.hero-wrapper .hero > div:last-child {
+  flex: 1; /* Ensures the image occupies one side */
+  order: 2; /* Positions the image on the right */
+  display: flex;
+  justify-content: flex-end; /* Aligns the image to the right */
+  position: relative; /* Allows fine control over placement */
+}
+
+.hero-wrapper .hero picture {
+  max-width: 260px; /* Constrains the image size */
+  height: auto;
+  object-fit: cover; /* Ensures the image does not stretch */
+  position: relative; /* Keeps the image properly aligned */
+  z-index: 1; /* Ensures the image is above the gradient */
+}
+
+.hero-wrapper::after {
+  content: '';
   position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-
-.hero img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-@media (width >= 900px) {
-  .hero {
-    padding: 40px 32px;
-  }
+  top: 50%; /* Moves the circular overlay higher */
+  right: 24px; /* Positions the overlay closer to the image */
+  transform: translateY(-50%);
+  width: 260px; /* Adjusts width for better proportions */
+  height: 260px; /* Adjusts height for better proportions */
+  background: rgba(255, 255, 255, 0.1); /* Adds a semi-transparent overlay */
+  border-radius: 50%; /* Creates a circular shape */
+  z-index: 0; /* Ensures it is behind the image */
 }
