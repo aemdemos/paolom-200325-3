@@ -1,27 +1,87 @@
-.cards > ul {
-  list-style: none;
-  margin: 0;
+
+.cards-wrapper > .cards.block {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap properly */
+  gap: 16px; /* Consistent spacing between cards */
+  justify-content: space-between; /* Distribute cards evenly */
+}
+
+.cards-wrapper > .cards.block > ul {
+  display: flex;
+  flex-wrap: wrap; /* Ensure cards wrap correctly */
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+  margin: 0;
+  list-style: none; /* Remove default list styles */
+  gap: 16px; /* Ensure uniform spacing */
 }
 
-.cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+.cards-wrapper > .cards.block > ul > li {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically inside cards */
+  flex: 1 1 calc(33.333% - 16px); /* Three cards per row */
+  max-width: calc(33.333% - 16px); /* Ensure cards fit evenly */
+  background-color: var(--background-color); /* Set card background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+  border: none; /* Remove borders */
+  overflow: hidden; /* Prevent overflow issues */
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+.cards-wrapper > .cards.block > ul > li img {
+  width: 100%; /* Ensure images span the full width of the card */
+  aspect-ratio: 4 / 5; /* Adjust aspect ratio for taller images */
+  object-fit: cover; /* Ensure images fill their container */
 }
 
-.cards .cards-card-image {
-  line-height: 0;
+.cards-wrapper > .cards.block .cards-card-image {
+  display: flex; /* Ensure proper alignment */
+  justify-content: center; /* Center the image within its container */
+  line-height: 0; /* Remove spacing around the image */
+  margin-bottom: 12px; /* Add consistent spacing below the image */
 }
 
-.cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+.cards-wrapper > .cards.block .cards-card-body {
+  display: flex;
+  flex-direction: column; /* Stack text elements vertically */
+  padding: 16px; /* Add padding for better spacing */
+  gap: 12px; /* Space between text elements */
+}
+
+.cards-wrapper > .cards.block .cards-card-body p:first-child {
+  font-size: 1rem; /* Adjust font size for the title */
+  font-weight: 500; /* Reduce font weight for a subtler hierarchy */
+  margin: 0; /* Remove default margins */
+}
+
+.cards-wrapper > .cards.block .cards-card-body p {
+  margin: 0; /* Ensure consistent spacing for paragraphs */
+  color: var(--text-color); /* Match text color with theme */
+}
+
+.cards-wrapper > .cards.block .button-container {
+  display: flex; /* Align the link horizontally */
+  align-items: center; /* Vertically center the link */
+  margin-top: auto; /* Push the link to the bottom of the card */
+}
+
+.cards-wrapper > .cards.block .button-container .button {
+  background: none; /* Remove background from link */
+  border: none; /* Remove border */
+  color: var(--link-color); /* Set link color */
+  font-size: 1rem; /* Adjust font size */
+  font-weight: bold; /* Make link text bold */
+  text-decoration: none; /* Remove underline */
+  display: inline-flex; /* Align text and arrow inline */
+  align-items: center; /* Center-align text and arrow */
+}
+
+.cards-wrapper > .cards.block .button-container .button::after {
+  content: "→"; /* Add arrow to the link */
+  margin-left: 4px; /* Space between text and arrow */
+}
+
+@media (max-width: 768px) {
+  .cards-wrapper > .cards.block > ul > li {
+    flex: 1 1 100%; /* Stack cards vertically */
+    max-width: 100%; /* Ensure cards span full width */
+  }
 }
