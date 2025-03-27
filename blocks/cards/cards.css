@@ -1,18 +1,36 @@
+.cards-container > .cards-wrapper {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
 .cards > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(412px, 1fr));
-  grid-gap: 24px;
+  grid-gap: 48px;
 }
 
 .cards > ul > li {
   background-color: var(--background-color);
+  margin-bottom: 50px;
 }
 
 .cards .cards-card-body {
-  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 268px;
+}
+
+.cards .cards-card-body > p.button-container:last-child {
+  position: absolute;
+  bottom: -35px;
+  padding-right: 30px;
+  background-image: url("data:image/svg+xml;utf8,<svg class='arrow_right' data-name='arrow_right' xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 34.163 31.041'><path id='Path_9' data-name='Path 9' d='M18.643,0l-1.92,1.921L28.964,14.162H0v2.716H28.965L16.723,29.12l1.921,1.92L34.164,15.52Z' transform='translate(0 0)'></path></svg>");
+  background-repeat: no-repeat;
+  background-position: bottom 22px right;
 }
 
 .cards .cards-card-image {

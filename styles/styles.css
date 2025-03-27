@@ -97,7 +97,7 @@ body {
   color: #5A5756;
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6;
 }
 
@@ -125,6 +125,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
   scroll-margin: 40px;
   color: #280067;
+  font-weight: 300;
+}
+
+h1, h2 {
   font-weight: 200;
 }
 
@@ -157,6 +161,15 @@ p, dl, ol, ul, pre, blockquote {
   margin-bottom: 0.25em;
 }
 
+ol {
+  padding-left: 18px;
+}
+
+ol > li {
+  padding-left: 26px;
+  margin-bottom: 10px;
+}
+
 code, pre {
   font-size: var(--body-font-size-s);
 }
@@ -179,8 +192,7 @@ input, textarea, select, button {
 
 /* links */
 a:any-link {
-  color: var(--link-color);
-  text-decoration: none;
+  color: #5A5756;
   word-break: break-word;
 }
 
@@ -275,4 +287,18 @@ main .section.light, main .section.highlight {
 
 .section.hidden {
   display: none;
+}
+
+.hero-wrapper + .default-content-wrapper {
+  font-weight: 300;
+}
+
+.hero-wrapper + .default-content-wrapper h3 {
+  font-weight: 200;
+}
+
+.hero-wrapper + .default-content-wrapper h3 em {
+  font-style: normal;
+  color: #F6376B;
+  font-weight: 400;
 }
