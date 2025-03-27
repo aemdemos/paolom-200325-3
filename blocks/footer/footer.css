@@ -17,6 +17,7 @@ footer .footer > div {
 
 footer .footer > div a:any-link {
   color: #fff;
+  text-decoration: none;
 }
 
 footer .footer > div > .links {
