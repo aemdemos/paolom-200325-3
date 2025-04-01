@@ -111,6 +111,7 @@ footer .footer p {
 
   footer .footer > div > .links > div > ul > li > ul {
     display: block;
+    padding-bottom: 24px;
   }
 
   footer .footer > div > .links > div > ul > li > ul > li {
