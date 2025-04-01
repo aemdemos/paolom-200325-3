@@ -17,4 +17,30 @@ export default async function decorate(block) {
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
 
   block.append(footer);
+
+  // Add accordion functionality to footer links
+  document.querySelectorAll('footer .footer > div > .links > div > ul > li').forEach((li) => {
+    const subMenu = li.querySelector('ul');
+    if (subMenu) {
+      // Make the main item clickable
+      li.style.cursor = 'pointer';
+      
+      // Add click handler
+      li.addEventListener('click', (e) => {
+        e.stopPropagation();
+        
+        // Toggle visibility of list items instead of the ul
+        const listItems = subMenu.querySelectorAll('li');
+        const isHidden = listItems[0].style.display === 'none';
+        listItems.forEach(item => {
+          item.style.display = isHidden ? 'block' : 'none';
+        });
+      });
+
+      // Prevent clicks on submenu items from toggling the menu
+      subMenu.addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
+    }
+  });
 }

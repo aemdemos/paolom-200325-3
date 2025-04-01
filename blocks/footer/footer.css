@@ -11,7 +11,7 @@ footer .footer > div {
   "links links"
   "logo legal"
   "notice notice";
-  grid-template-columns: 650px 525px;
+  grid-template-columns: 1fr 1fr;
   color: #fff;
 }
 
@@ -58,6 +58,11 @@ footer .footer > div > .links > div > ul > li > ul {
   border-top: 3px solid #F6376B;
   padding-top: 20px;
   font-weight: 300;
+  display: block;
+}
+
+footer .footer > div > .links > div > ul > li > ul > li {
+  display: block;
 }
 
 footer .footer > div > .logo img {
@@ -73,8 +78,42 @@ footer .footer p {
   margin: 0;
 }
 
-@media (width >= 900px) {
+@media (width >= 1055px) {
   footer .footer > div {
     padding: 40px 32px 24px;
+  }
+
+}
+
+@media (width <= 1055px) {
+  footer .footer > div {
+    grid-template-areas:
+      "links"
+      "logo"
+      "legal"
+      "notice";
+    grid-template-columns: 1fr;
+  }
+
+  footer .footer > div > .logo {
+    text-align: center;
+  }
+
+  footer .footer > div > .legal {
+    text-align: center;
+    margin: 24px 0;
+  }
+
+  footer .footer > div > .links > div > ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .footer > div > .links > div > ul > li > ul {
+    display: block;
+  }
+
+  footer .footer > div > .links > div > ul > li > ul > li {
+    display: none;
   }
 }
